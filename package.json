@@ -1,0 +1,21 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node study",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [
+    "study"
+  ],
+  "author": "lazybricker",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "gulp-jshint": "^1.11.2",
+    "jshint-stylish": "^2.0.1"
+  }
+}
