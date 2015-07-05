@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var babel = require('gulp-babel');
 var jshint = require('gulp-jshint');
 var del = require('del');
+var mocha = require('gulp-mocha');
 
 gulp.task('default', ['lint', 'babel']);
 
@@ -18,6 +19,11 @@ gulp.task('lint', function () {
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('jshint-stylish'))
     .pipe(jshint.reporter('fail'));
+});
+
+gulp.task('test', function () {
+  return gulp.src('test/**/*.js')
+    .pipe(mocha({reporter: 'nyan'}));
 });
 
 gulp.task('clean', function (cb) {

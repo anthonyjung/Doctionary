@@ -9,5 +9,6 @@
   "trailing": true,
   "esnext": true,
   "devel": true,
-  "node": true
+  "node": true,
+  "mocha": true
 }
